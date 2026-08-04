@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <meta name="robots" content="noindex,nofollow"/>
 <title>粒刻 · 成都站品牌复盘</title>
-<!-- recap-v5: brand-only, no index nav --><style>
+<!-- recap-v6: brand-only, no index nav --><style>
   :root{--bg:#0f1115;--chrome:#171a21;--elev:#1c212b;--stroke:#2a3140;--t1:#f2f4f8;--t2:#9aa3b5;--t3:#6b7385;--accent:#3d8bfd;--ok:#3dd68c;--bad:#ff6b6b;--warn:#f5a524}
   *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--t1);line-height:1.5}
   .wrap{max-width:920px;margin:0 auto;padding:28px 20px 64px}
@@ -212,6 +212,37 @@
 </div>
 
 
+
+<div class="card">
+  <h3>福利中心规模（生产埋点 · 2026-07-04～08-04）</h3>
+  <div class="kpis">
+    <div class="kpi info"><div class="v">12,418</div><div class="l">福利中心 PV</div></div>
+    <div class="kpi ok"><div class="v">3,792</div><div class="l">福利中心 UV</div></div>
+    <div class="kpi"><div class="v">3.27</div><div class="l">人均访问次数</div></div>
+    <div class="kpi"><div class="v">4,322</div><div class="l">福利活动点击 PV</div></div>
+  </div>
+  <div class="kpis">
+    <div class="kpi ok"><div class="v">3,503</div><div class="l">峰值日 PV（08-02）</div></div>
+    <div class="kpi info"><div class="v">1,636</div><div class="l">峰值日 UV（08-02）</div></div>
+    <div class="kpi"><div class="v">914</div><div class="l">各活动业务记录合计</div></div>
+    <div class="kpi"><div class="v">7/18</div><div class="l">福利中心埋点起始</div></div>
+  </div>
+  <table>
+    <thead><tr><th>日期</th><th class="num">PV</th><th class="num">UV</th><th>日期</th><th class="num">PV</th><th class="num">UV</th></tr></thead>
+    <tbody>
+      <tr><td>07-18</td><td class="num">6</td><td class="num">1</td><td>07-27</td><td class="num">335</td><td class="num">47</td></tr>
+      <tr><td>07-20</td><td class="num">183</td><td class="num">17</td><td>07-28</td><td class="num">677</td><td class="num">183</td></tr>
+      <tr><td>07-21</td><td class="num">942</td><td class="num">319</td><td>07-29</td><td class="num">1,239</td><td class="num">426</td></tr>
+      <tr><td>07-22</td><td class="num">303</td><td class="num">105</td><td>07-30</td><td class="num">497</td><td class="num">194</td></tr>
+      <tr><td>07-23</td><td class="num">180</td><td class="num">43</td><td>07-31</td><td class="num">737</td><td class="num">306</td></tr>
+      <tr><td>07-24</td><td class="num">112</td><td class="num">37</td><td>08-01</td><td class="num">2,374</td><td class="num">1,084</td></tr>
+      <tr class="ok"><td>07-25</td><td class="num">64</td><td class="num">23</td><td>08-02</td><td class="num"><b>3,503</b></td><td class="num"><b>1,636</b></td></tr>
+      <tr><td>07-26</td><td class="num">98</td><td class="num">25</td><td>08-03</td><td class="num">1,119</td><td class="num">534</td></tr>
+    </tbody>
+  </table>
+  <div class="meta">口径：UV 优先按登录 <code>user_id</code> 去重，未登录按 <code>anonymous_id</code>；合计 UV 3,792 为跨日去重。峰值集中在成都赛周末。埋点自 7/18 起；7/19 为 0 未列入。</div>
+</div>
+
 <h2>1. Roxscan 为「粒刻」赋能了什么</h2>
 <div class="box ok"><b>赋能结论：</b>Roxscan 交付用户/社群/工具价值，把完赛高峰（PV 59.2万、日活 6,705）经弹窗峰值档与赛中 Tab 导给粒刻。粒刻侧用「完赛即领」高吸引力接住流量——现场领取 <b>411</b>、点击→领取 <b>73.1%</b>。同品牌内对照：Sub70 挑战报名仅 42、点击→参与 7.9%，转化差约 <b>10×</b>——证明 <b>活动设计本身拉开转化倍数</b>。</div>
 <div class="box"><b>对品牌一句话：</b>曝光加总 19,429 + 现场领取 411。不是「曝光空转」——当品牌给出足够吸引力，Roxscan 能把完赛人群直接送到履约现场。</div>
@@ -245,7 +276,14 @@
 <div class="meta">加总为触达规模（不去重）。活动曝光=Tab 潜在透出，非单卡可视曝光。</div>
 
 <h2>3. 弹窗排期</h2>
-<table><thead><tr><th>日期</th><th class="num">曝光 PV</th></tr></thead><tbody><tr><td>07-29</td><td class='num'>297</td></tr><tr><td>07-30</td><td class='num'>520</td></tr><tr><td>07-31</td><td class='num'>522</td></tr><tr><td>08-01</td><td class='num'>3,570</td></tr><tr><td>08-02</td><td class='num'>5,366</td></tr><tr><td>08-03</td><td class='num'>18</td></tr></tbody></table>
+<table><thead><tr><th>日期</th><th class="num">曝光 PV</th><th class="num">UV</th></tr></thead><tbody>
+<tr><td>07-29</td><td class="num">297</td><td class="num">291</td></tr>
+<tr><td>07-30</td><td class="num">520</td><td class="num">492</td></tr>
+<tr><td>07-31</td><td class="num">522</td><td class="num">511</td></tr>
+<tr class="hl"><td>08-01</td><td class="num">3,570</td><td class="num">3,494</td></tr>
+<tr class="ok"><td>08-02</td><td class="num"><b>5,366</b></td><td class="num"><b>5,246</b></td></tr>
+<tr><td>08-03</td><td class="num">18</td><td class="num">18</td></tr>
+</tbody></table>
 
 <h2>4. 活动漏斗与互动</h2>
 <div class="kpis">
@@ -260,7 +298,90 @@
   <tbody><tr class=''><td>赛前</td><td>Sub70</td><td class='num'>5,982</td><td class='num'>1,185</td><td class='num'>530</td><td class='num'>42</td><td>报名</td><td class='num'>7.9%</td><td>点击高、报名低</td></tr><tr class='ok'><td>赛中</td><td>成都完赛领取</td><td class='num'>2,167</td><td class='num'>1,090</td><td class='num'>562</td><td class='num'>411</td><td>现场核销/领取</td><td class='num'>73.1%</td><td>最优履约</td></tr><tr class=''><td>赛后</td><td>PB 奖励</td><td class='num'>987</td><td class='num'>404</td><td class='num'>191</td><td class='num'>32</td><td>报名</td><td class='num'>16.8%</td><td>体量中等</td></tr></tbody>
 </table>
 
-<h2>5. 建议</h2>
+
+<h2>5. 完赛领取明细</h2>
+<div class="box ok"><b>履约结果：</b>现场领取合计 <b>411</b>；峰值在 <b>08-02（246）</b>，08-01 为 165。</div>
+<div class="kpis">
+  <div class="kpi"><div class="v">165</div><div class="l">08-01 领取</div></div>
+  <div class="kpi ok"><div class="v">246</div><div class="l">08-02 领取（峰值）</div></div>
+  <div class="kpi info"><div class="v">411</div><div class="l">合计领取</div></div>
+  <div class="kpi"><div class="v">73.1%</div><div class="l">点击 UV → 领取</div></div>
+</div>
+<table>
+  <thead><tr><th>组别</th><th>性别</th><th class="num">领取数</th></tr></thead>
+  <tbody>
+    <tr class="ok"><td>公开单人组</td><td>男</td><td class="num">83</td></tr>
+    <tr><td>混合双人组</td><td>混合</td><td class="num">80</td></tr>
+    <tr><td>女子双人组</td><td>女</td><td class="num">79</td></tr>
+    <tr><td>男子双人组</td><td>男</td><td class="num">62</td></tr>
+    <tr><td>公开单人组</td><td>女</td><td class="num">26</td></tr>
+    <tr><td>精英单人组</td><td>男</td><td class="num">16</td></tr>
+    <tr><td>接力组</td><td>女</td><td class="num">14</td></tr>
+    <tr><td>接力组</td><td>男</td><td class="num">14</td></tr>
+    <tr><td>精英双人组</td><td>女</td><td class="num">13</td></tr>
+    <tr><td>精英单人组</td><td>女</td><td class="num">10</td></tr>
+    <tr><td>精英双人组</td><td>男</td><td class="num">9</td></tr>
+    <tr><td>接力组</td><td>混合</td><td class="num">5</td></tr>
+    <tr class="ok"><td colspan="2"><b>合计</b></td><td class="num"><b>411</b></td></tr>
+  </tbody>
+</table>
+
+<h2>6. Sub70 报名明细</h2>
+<div class="box warn"><b>状态：</b>42 份报名目前全部为 <b>待审核（pending）</b>；已通过 / 已拒绝均为 0。业务库尚无发货字段。</div>
+<div class="grid2">
+  <div class="card">
+    <h3>报名组别</h3>
+    <table>
+      <tr class="ok"><td>混合双人组</td><td class="num">28</td></tr>
+      <tr><td>精英男子双人组</td><td class="num">12</td></tr>
+      <tr><td>精英女子双人组</td><td class="num">1</td></tr>
+      <tr><td>精英男子单人组</td><td class="num">1</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3>口味选择</h3>
+    <table>
+      <tr class="ok"><td>white_grape_jasmine</td><td class="num">27</td></tr>
+      <tr><td>sunny_pomegranate</td><td class="num">15</td></tr>
+    </table>
+  </div>
+</div>
+<table>
+  <thead><tr><th>日期</th><th class="num">报名数</th></tr></thead>
+  <tbody>
+    <tr><td>07-27</td><td class="num">2</td></tr>
+    <tr class="hl"><td>07-28</td><td class="num">14</td></tr>
+    <tr><td>07-29</td><td class="num">3</td></tr>
+    <tr><td>07-30</td><td class="num">5</td></tr>
+    <tr><td>07-31</td><td class="num">3</td></tr>
+    <tr><td>08-01</td><td class="num">3</td></tr>
+    <tr><td>08-02</td><td class="num">6</td></tr>
+    <tr><td>08-03</td><td class="num">6</td></tr>
+  </tbody>
+</table>
+
+<h2>7. PB 奖励申请明细</h2>
+<div class="box warn"><b>状态：</b>32 份申请目前全部为 <b>待审核（pending）</b>；已通过 / 已拒绝均为 0。</div>
+<div class="kpis">
+  <div class="kpi info"><div class="v">5′30″</div><div class="l">平均 PB 提升（330.1 秒）</div></div>
+  <div class="kpi ok"><div class="v">19′06″</div><div class="l">最大提升（1,146 秒）</div></div>
+  <div class="kpi"><div class="v">32</div><div class="l">申请人数</div></div>
+  <div class="kpi"><div class="v">16.8%</div><div class="l">点击 UV → 申请</div></div>
+</div>
+<table>
+  <thead><tr><th>组别</th><th class="num">人数</th></tr></thead>
+  <tbody>
+    <tr class="ok"><td>公开单人男子组</td><td class="num">12</td></tr>
+    <tr><td>混合双人组</td><td class="num">7</td></tr>
+    <tr><td>双人男子组</td><td class="num">4</td></tr>
+    <tr><td>精英单人男子组</td><td class="num">4</td></tr>
+    <tr><td>公开单人女子组</td><td class="num">2</td></tr>
+    <tr><td>精英双人女子组</td><td class="num">2</td></tr>
+    <tr><td>双人女子组</td><td class="num">1</td></tr>
+  </tbody>
+</table>
+
+<h2>8. 建议</h2>
 <div class="card"><p style="margin:0;color:var(--t2);font-size:13px">保持完赛即领；Sub70 可降低报名摩擦或改为完赛后领取。</p></div>
 <div class="foot">ROXSCAN 赋能报告 · 仅供合作沟通 · 2026-08-04<br/>完整复盘见桌面「成都站完整增长复盘.html」</div>
 </div></body></html>
