@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>淘宝闪购 · 成都站品牌复盘</title><style>
+  :root{--bg:#0f1115;--chrome:#171a21;--elev:#1c212b;--stroke:#2a3140;--t1:#f2f4f8;--t2:#9aa3b5;--t3:#6b7385;--accent:#3d8bfd;--ok:#3dd68c;--bad:#ff6b6b;--warn:#f5a524}
+  *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--t1);line-height:1.5}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 20px 64px}
+  .brand{font-size:22px;font-weight:850;letter-spacing:.06em}.brand span{font-size:12px;font-weight:600;color:var(--t2);margin-left:8px}
+  h1{margin:8px 0 6px;font-size:26px}h2{font-size:18px;margin:26px 0 10px}h3{font-size:14px;margin:14px 0 8px}
+  .sub{color:var(--t2);font-size:14px}.meta{color:var(--t3);font-size:12px;margin-top:4px}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+  .kpi{background:var(--chrome);border:1px solid var(--stroke);border-radius:12px;padding:12px 14px}
+  .kpi .v{font-size:22px;font-weight:750;font-variant-numeric:tabular-nums}.kpi .l{color:var(--t2);font-size:12px;margin-top:4px}
+  .kpi.ok .v{color:var(--ok)}.kpi.info .v{color:var(--accent)}.kpi.warn .v{color:var(--warn)}.kpi.bad .v{color:var(--bad)}
+  .box{background:var(--chrome);border:1px solid var(--stroke);border-radius:12px;padding:14px 16px;margin:10px 0;color:var(--t2);font-size:13px}
+  .box b{color:var(--t1)}.box.info{border-color:rgba(61,139,253,.35)}.box.ok{border-color:rgba(61,214,140,.35)}.box.warn{border-color:rgba(245,165,36,.35)}.box.bad{border-color:rgba(255,107,107,.35)}
+  table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--stroke);vertical-align:top}
+  th{color:var(--t2);font-weight:600;font-size:12px}.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr.ok td{background:rgba(61,214,140,.06)}tr.bad td{background:rgba(255,107,107,.08)}tr.hl td{background:rgba(61,139,253,.08)}
+  .card{background:var(--elev);border:1px solid var(--stroke);border-radius:12px;padding:14px 16px;margin:12px 0}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .foot{margin-top:28px;color:var(--t3);font-size:12px}
+  @media(max-width:700px){.kpis,.grid2{grid-template-columns:1fr}}
+
+
+
+@page { size: A4; margin: 12mm 12mm 14mm 12mm; }
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    box-shadow: none !important;
+  }
+  html, body {
+    background: #ffffff !important;
+    color: #1a1f2c !important;
+    font-size: 11px !important;
+    line-height: 1.45 !important;
+  }
+  .wrap {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .brand { color: #1a1f2c !important; font-size: 14px !important; }
+  .brand span { color: #667085 !important; }
+  h1 { color: #101828 !important; font-size: 22px !important; margin: 6px 0 4px !important; }
+  h2 { color: #101828 !important; font-size: 15px !important; margin: 16px 0 8px !important; break-after: avoid; page-break-after: avoid; }
+  h3 { color: #344054 !important; font-size: 12px !important; margin: 8px 0 6px !important; break-after: avoid; page-break-after: avoid; }
+  .sub, .meta, .foot { color: #667085 !important; }
+  .kpis {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
+    margin: 8px 0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .kpi {
+    background: #f8fafc !important;
+    border: 1px solid #e4e7ec !important;
+    border-radius: 8px !important;
+    padding: 10px 12px !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .kpi .v { color: #101828 !important; font-size: 15px !important; }
+  .kpi.ok .v, .kpi.info .v, .kpi.warn .v, .kpi.bad .v { color: #101828 !important; }
+  .kpi .l { color: #667085 !important; font-size: 10px !important; }
+  .box, .card {
+    background: #ffffff !important;
+    border: 1px solid #e4e7ec !important;
+    border-radius: 8px !important;
+    color: #344054 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 8px 0 !important;
+    padding: 10px 12px !important;
+  }
+  .box b, .card b { color: #101828 !important; }
+  .box.ok { border-left: 3px solid #12b76a !important; background: #f6fef9 !important; }
+  .box.info { border-left: 3px solid #2e90fa !important; background: #f5f9ff !important; }
+  .box.warn { border-left: 3px solid #f79009 !important; background: #fffcf5 !important; }
+  .box.bad { border-left: 3px solid #f04438 !important; background: #fef3f2 !important; }
+  .grid2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-size: 10px !important;
+    break-inside: auto;
+  }
+  thead { display: table-header-group; }
+  tr { break-inside: avoid; page-break-inside: avoid; }
+  th, td {
+    border-bottom: 1px solid #eaecf0 !important;
+    color: #344054 !important;
+    padding: 6px 5px !important;
+    background: transparent !important;
+  }
+  th { color: #667085 !important; background: #f9fafb !important; }
+  tr.ok td { background: #f6fef9 !important; }
+  tr.hl td { background: #f5f9ff !important; }
+  tr.bad td { background: #fef3f2 !important; }
+  a { color: #175cd3 !important; text-decoration: none !important; }
+  .foot { margin-top: 12px !important; }
+}
+
+
+@media print {
+  /* wide funnel tables: shrink further */
+  table { font-size: 9px !important; }
+  th, td { padding: 5px 3px !important; word-break: break-word; }
+  .kpis { grid-template-columns: repeat(4, 1fr) !important; }
+  .kpi .v { font-size: 15px !important; }
+  .kpi .l { font-size: 9px !important; }
+  h1 { font-size: 20px !important; }
+  /* keep section starts together */
+  h2, h3, .box, .card, .kpis { break-inside: avoid; page-break-inside: avoid; }
+}
+
+</style></head><body><div class="wrap">
+<p style="margin:0 0 8px"><a href="index.html" style="color:#9ec5ff;font-size:13px;text-decoration:none">← 返回品牌复盘索引</a></p>
+
+<div class="brand">ROXSCAN<span>· BRAND EMPOWERMENT REPORT</span></div>
+<h1>淘宝闪购 · 成都站合作复盘</h1>
+<div class="sub">Roxscan 赋能视角 · 头部第一入口的集中爆发 · 先讲场，再讲品牌所得 · 2026-07-04～08-04</div>
+<div class="meta">数据：微信官方（访问/时长/地域/来源）+ 生产埋点 + 福利业务库</div>
+
+
+<h2>0. Roxscan：头部第一入口，本场比赛的集中爆发</h2>
+<div class="box ok">
+  <b>给品牌先看结论：</b>Roxscan 作为 HYROX 完赛体验的头部第一入口，交付的是三层价值——
+  <b>用户价值</b>（完赛复盘与停留）、<b>社群价值</b>（群聊/单聊把成绩卡传进同场圈）、<b>工具价值</b>（查分段、认领、分享、进福利中心一站完成）。
+  成都站爆发可观且集中：赛窗三日贡献窗口期约 <b>91%</b> 页面曝光，人均停留约 <b>13 分钟</b>。
+  <b>流量场由 Roxscan 打开；转化率取决于品牌给用户的吸引力。</b>同场对照：粒刻「完赛即领」现场领取 <b>411</b>、点击→领取约 <b>73%</b>，远高于同场低吸引力活动——证明活动流量可以被稳定导给合作品牌。
+</div>
+<div class="kpis">
+  <div class="kpi ok"><div class="v">59.2万</div><div class="l">页面曝光 PV 总量（7/27～8/03）</div></div>
+  <div class="kpi info"><div class="v">2.1万</div><div class="l">访问 UV 总量（累计用户 21,071）</div></div>
+  <div class="kpi"><div class="v">6,705</div><div class="l">峰值日 UV / 日活（08-02）</div></div>
+  <div class="kpi ok"><div class="v">12:55</div><div class="l">人均访问时长（惊人停留）</div></div>
+</div>
+<div class="kpis">
+  <div class="kpi info"><div class="v">53.8万</div><div class="l">赛窗三日 PV（8/1～8/3）</div></div>
+  <div class="kpi"><div class="v">+6,100</div><div class="l">赛窗三日新增 UV</div></div>
+  <div class="kpi"><div class="v">15.8</div><div class="l">峰值人均访问深度（页）</div></div>
+  <div class="kpi"><div class="v">≈12×</div><div class="l">峰值日活 / 赛前日常</div></div>
+</div>
+<div class="meta" style="margin:-4px 0 12px">
+  <b>口径：</b>PV = 微信官方「日访问页面数」加总（592,034）；UV 总量 = 微信累计用户（21,071）；峰值日 UV = 日访问人数。赛窗三日 PV 占窗口期 90.8%，说明爆发集中在比赛当天与次日，不是缓慢铺量。
+</div>
+<div class="grid2">
+  <div class="card">
+    <h3>为什么说「集中爆发」</h3>
+    <table>
+      <tr class="ok"><td>赛窗三日占窗口期 PV</td><td class="num"><b>90.8%</b></td></tr>
+      <tr><td>峰值日单日 PV（08-02）</td><td class="num">25.7万</td></tr>
+      <tr><td>峰值日活 vs 赛前日常</td><td class="num">约 12 倍</td></tr>
+      <tr><td>赛窗分享人数峰值</td><td class="num">1,147</td></tr>
+    </table>
+    <div class="meta">完赛人群在短时间内涌入 Roxscan；品牌若卡在峰值档位，拿到的是最高浓度流量。</div>
+  </div>
+  <div class="card">
+    <h3>用户价值：人都围着 Roxscan</h3>
+    <table>
+      <tr class="ok"><td>人均访问时长</td><td class="num"><b>12:55</b></td></tr>
+      <tr><td>次均访问时长</td><td class="num">1:38</td></tr>
+      <tr><td>核心行为</td><td>成绩摘要 / 分段 / 分享</td></tr>
+      <tr><td>福利中心占周访客</td><td class="num">29.5%</td></tr>
+    </table>
+    <div class="meta">来源以群聊 58.5% + 单聊 21.8% 为主——用户主动把 Roxscan 传到同场选手圈；川渝合计约 35%。</div>
+  </div>
+</div>
+<div class="grid2">
+  <div class="card">
+    <h3>人群从哪来</h3>
+    <table>
+      <tr class="ok"><td>四川</td><td class="num">28.8%</td></tr>
+      <tr><td>上海</td><td class="num">13.4%</td></tr>
+      <tr><td>广东</td><td class="num">7.2%</td></tr>
+      <tr><td>陕西 / 北京 / 重庆</td><td class="num">各约 6%</td></tr>
+    </table>
+    <div class="meta">主场 + 全国选手回流；朋友圈仅 1.3%，裂变靠私域群聊。</div>
+  </div>
+  <div class="card">
+    <h3>对品牌意味着什么</h3>
+    <table>
+      <tr class="ok"><td>Roxscan 交付</td><td>用户价值 · 社群价值 · 工具价值</td></tr>
+      <tr><td>品牌负责</td><td>用更大吸引力把意向变成转化</td></tr>
+      <tr><td>证据</td><td>粒刻完赛领取 411（同场最优）</td></tr>
+      <tr><td>合作逻辑</td><td>接入峰值场 + 高吸引力履约设计</td></tr>
+    </table>
+  </div>
+</div>
+<div class="card">
+  <h3>访问时长怎么变（微信官方 · 滚动近7天）</h3>
+  <table>
+    <thead><tr><th>周期</th><th class="num">人均访问时长</th><th class="num">次均访问时长</th><th>解读</th></tr></thead>
+    <tbody>
+      <tr><td>07/04～07/10（杭州赛后周）</td><td class="num">13:11</td><td class="num">1:45</td><td>上一场高峰参照</td></tr>
+      <tr><td>07/18～07/24（成都预热早段）</td><td class="num">6:49</td><td class="num">2:09</td><td>回落期</td></tr>
+      <tr class="hl"><td>07/27～08/02（含赛日）</td><td class="num">11:15</td><td class="num">1:32</td><td>赛周末拉升</td></tr>
+      <tr class="ok"><td>07/28～08/03（赛后第2天）</td><td class="num"><b>12:55</b></td><td class="num">1:38</td><td>本场复盘窗口峰值</td></tr>
+    </tbody>
+  </table>
+  <div class="meta">口径：微信「用户访问时长趋势」（滚动近7天）。人均约 13 分钟，对小程序赛后场景属于极高停留——用户把完赛复盘与分享都留在 Roxscan，这就是用户价值。</div>
+</div>
+<div class="card">
+  <h3>福利中心停留 / 互动（自建埋点估算）</h3>
+  <div class="box warn"><b>说明：</b>微信后台无「福利中心单页停留时长」官方指标。以下用 7/29～8/03 福利中心相关事件，按同一 <code>session_id</code> 首末事件间隔估算停留；互动用阶段切换与活动点击衡量。</div>
+  <div class="kpis">
+    <div class="kpi info"><div class="v">≈1:49</div><div class="l">福利中心会话平均跨度</div></div>
+    <div class="kpi"><div class="v">6.7</div><div class="l">会话内平均事件数</div></div>
+    <div class="kpi"><div class="v">30.7%</div><div class="l">会话有活动点击占比</div></div>
+    <div class="kpi"><div class="v">0.55</div><div class="l">会话均阶段切换次数</div></div>
+  </div>
+  <div class="meta">样本：4,277 个福利相关会话（跨度 0～30 分钟）。这是「互动跨度」代理指标，不是官方 page stay time。</div>
+</div>
+
+
+<h2>1. Roxscan 为「淘宝闪购」赋能了什么</h2>
+<div class="box info"><b>赋能结论：</b>Roxscan 交付用户/社群/工具价值，并提供赛前曝光位；本场贵品牌拿到了透出，但转化（战队报名 33）仍偏低。对照粒刻完赛领取 411：<b>流量场已打开，转化率需要品牌提供更大吸引力</b>。</div>
+<div class="box"><b>对品牌一句话：</b>战队报名 33，报名规模仍小。下一场若对齐完赛峰值 + 更高吸引力利益点，Roxscan 可把活动流量更充分导给贵品牌。</div>
+
+<h2>2. 贵品牌拿到的曝光加总</h2>
+<div class="kpis">
+  <div class="kpi info"><div class="v">1,372</div><div class="l">弹窗曝光 PV</div></div>
+  <div class="kpi"><div class="v">5,089</div><div class="l">活动曝光（赛前+中+后）</div></div>
+  <div class="kpi ok"><div class="v">6,461</div><div class="l">品牌曝光加总</div></div>
+  <div class="kpi"><div class="v">33</div><div class="l">实际参与</div></div>
+</div>
+<table>
+  <thead><tr><th>曝光类型</th><th class="num">赛前</th><th class="num">赛中</th><th class="num">赛后</th><th class="num">小计</th></tr></thead>
+  <tbody>
+    <tr><td>弹窗</td><td class="num" colspan="3">7/20–7/24 与 aweather 共用弹窗</td><td class="num">1,372</td></tr>
+    <tr class="hl"><td>福利中心活动曝光</td><td class="num">5,089</td><td class="num">0</td><td class="num">0</td><td class="num">5,089</td></tr>
+    <tr class="ok"><td><b>加总</b></td><td class="num" colspan="3">弹窗 + 活动曝光</td><td class="num"><b>6,461</b></td></tr>
+  </tbody>
+</table>
+<div class="meta">加总为触达规模（不去重）。活动曝光=Tab 潜在透出，非单卡可视曝光。</div>
+
+<h2>3. 弹窗排期</h2>
+<table><thead><tr><th>日期</th><th class="num">曝光 PV</th></tr></thead><tbody><tr><td>07-20</td><td class='num'>63</td></tr><tr><td>07-21</td><td class='num'>547</td></tr><tr><td>07-22</td><td class='num'>299</td></tr><tr><td>07-23</td><td class='num'>305</td></tr><tr><td>07-24</td><td class='num'>158</td></tr></tbody></table>
+
+<h2>4. 活动漏斗与互动</h2>
+<div class="kpis">
+  <div class="kpi"><div class="v">109</div><div class="l">点击 PV</div></div>
+  <div class="kpi"><div class="v">99</div><div class="l">点击 UV 加总*</div></div>
+  <div class="kpi"><div class="v">33</div><div class="l">报名</div></div>
+  <div class="kpi "><div class="v">0</div><div class="l">核销</div></div>
+</div>
+
+<table>
+  <thead><tr><th>阶段</th><th>活动</th><th class="num">活动曝光</th><th class="num">点击PV</th><th class="num">点击UV</th><th class="num">参与</th><th>口径</th><th class="num">转化</th><th>解读</th></tr></thead>
+  <tbody><tr class=''><td>赛前</td><td>战队招募</td><td class='num'>5,089</td><td class='num'>109</td><td class='num'>99</td><td class='num'>33</td><td>报名提交</td><td class='num'>33.3%</td><td>有转化体量小</td></tr></tbody>
+</table>
+<div class="box info">
+  <b>福利中心停留/互动（全场估算，非品牌独占）：</b>
+  赛周末福利会话平均跨度约 <b>1 分 49 秒</b>，会话均 <b>6.7</b> 个事件、约 <b>31%</b> 会话产生活动点击、均 <b>0.55</b> 次阶段切换。
+  贵品牌的点击与参与见上表——这是在 Roxscan 已把用户留在福利中心的前提下发生的互动。
+</div>
+
+<h2>5. 建议</h2>
+<div class="card"><p style="margin:0;color:var(--t2);font-size:13px">加强卡片点击；评估独立弹窗或完赛玩法。</p></div>
+<div class="foot">ROXSCAN 赋能报告 · 仅供合作沟通 · 2026-08-04<br/>完整复盘见桌面「成都站完整增长复盘.html」</div>
+</div></body></html>
